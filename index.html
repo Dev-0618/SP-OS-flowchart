@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP OS Modes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.8.0/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <h1>SP OS Mode Selection</h1>
+
+    <div class="mermaid-container">
+        <pre class="mermaid">
+graph TD
+  SP[SP OS] --> LOGIN[LOGIN]
+  LOGIN --> CHOOSE[Choose Mode]
+  CHOOSE -->|Shift| B[Hacker Mode]
+  CHOOSE -->|Shift| C[Student Mode]
+  CHOOSE -->|Shift| D[Researcher Mode]
+  CHOOSE -->|Shift| E[Developer Mode]
+  CHOOSE -->|Shift| F[Guest Mode]
+  CHOOSE -->|Shift| G[Child Mode]
+
+  B -->|Tools| H[Metasploit
+Burp Suite
+Nmap
+Wireshark
+Ghidra
+Aircrack-ng
+Recon-ng
+Hydra
+John the Ripper]
+
+  C -->|Tools| I[Tomato
+Stretchly
+Zettlr
+Joplin
+Anki
+XMind
+GoldenDict
+GNOME Calendar
+Kalarm]
+
+  D -->|Tools| J[Zotero
+JabRef
+Mendeley
+TeXstudio
+LyX
+Okular
+Atril
+Xournal++
+Kiwix
+Taskwarrior
+Obsidian]
+
+  E -->|Tools| K[Git
+Docker
+tmux
+VS Code
+Geany
+Neovim
+GCC
+Clang
+Python3
+Node.js
+Gradle
+Maven
+Make
+GDB
+Valgrind
+Postman]
+
+  F -->|Tools| L[PCManFM
+Xfce Terminal
+Featherpad
+Viewnior
+LibreWolf
+gufw
+Firejail
+Timekpr-nExT
+GNOME Parental Controls]
+  F -->|Lock| M[Auto-login, No Sudo, No Access to Settings, No User Switch, Auto-logout, No External Media]
+  F --o|Back to Modes| CHOOSE
+
+  G -->|Tools| O[GCompris
+TuxPaint
+Scratch
+TuxMath
+TuxTyping
+LibreWolf
+DansGuardian
+Timekpr-nExT
+GNOME Parental Controls
+Pi-hole]
+  G -->|Lock| P[Parental PIN, Time Limits, Restrict App Launch, Lock System Changes, Lock GUI Access, File System Lock, No Admin Rights]
+  G --o|Back to Modes| CHOOSE
+        </pre>
+    </div>
+
+    <div class="controls">
+        <h2>Simulate Mode Selection</h2>
+        <button onclick="simulateMode('Hacker')">Hacker Mode</button>
+        <button onclick="simulateMode('Student')">Student Mode</button>
+        <button onclick="simulateMode('Researcher')">Researcher Mode</button>
+        <button onclick="simulateMode('Developer')">Developer Mode</button>
+        <button onclick="simulateMode('Guest')">Guest Mode</button>
+        <button onclick="simulateMode('Child')">Child Mode</button>
+        <p id="mode-info"></p>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</body>
+</html>
