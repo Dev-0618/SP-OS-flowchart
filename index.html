@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SP OS Modes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10.8.0/dist/mermaid.min.js"></script>
 </head>
 <body>
@@ -80,7 +80,12 @@ gufw
 Firejail
 Timekpr-nExT
 GNOME Parental Controls]
-  F -->|Lock| M[Auto-login, No Sudo, No Access to Settings, No User Switch, Auto-logout, No External Media]
+  F -->|Lock| M[Auto-login
+No Sudo
+No Access to Settings
+No User Switch
+Auto-logout
+No External Media]
   F --o|Back to Modes| CHOOSE
 
   G -->|Tools| O[GCompris
@@ -93,7 +98,13 @@ DansGuardian
 Timekpr-nExT
 GNOME Parental Controls
 Pi-hole]
-  G -->|Lock| P[Parental PIN, Time Limits, Restrict App Launch, Lock System Changes, Lock GUI Access, File System Lock, No Admin Rights]
+  G -->|Lock| P[Parental PIN
+  Time Limits
+  Restrict App Launch
+  Lock System Changes
+  Lock GUI Access
+  File System Lock
+  No Admin Rights]
   G --o|Back to Modes| CHOOSE
         </pre>
     </div>
