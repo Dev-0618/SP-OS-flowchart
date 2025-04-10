@@ -18,7 +18,7 @@ h1, h2 {
 }
 
 .mermaid-container {
-    background-color: #2c2c2c;
+    background-color: #a8a8a8;
     color: #d4d4d4;
     border-radius: 8px;
     padding: 20px;
@@ -37,8 +37,8 @@ h1, h2 {
 
 /* Styles to improve Mermaid rendering in dark mode */
 .mermaid :is(.node rect, .edgePath .path) {
-    fill: #333 !important; /* Darker node background */
-    stroke: #666 !important; /* Medium gray border */
+    fill: #ffffff !important; /* Darker node background */
+    stroke: #ffffff !important; /* Medium gray border */
 }
 
 .mermaid .node label {
@@ -48,7 +48,7 @@ h1, h2 {
 
 .mermaid .edgeLabel {
     fill: #ddd !important; /* Light edge label text */
-    background-color: rgba(0, 0, 0, 0.7) !important; /* Dark background for readability */
+    background-color: rgba(255, 255, 255, 0.7) !important; /* Dark background for readability */
     padding: 2px 5px;
     border-radius: 3px;
     font-size: 12px !important; /* Adjust font size */
